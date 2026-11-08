@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Kyle Culanculan, a second-year IT student and web design enthusiast.">
+  <title>Kyle Culanculan | Personal Website</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="site-header">
+  <a class="brand" href="#home">SumiVerse 2.0</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button id="menu-toggle" type="button" aria-label="Open menu">☰</button>
+  <button id="theme-toggle" type="button" aria-label="Toggle light and dark mode">🌙</button>
+</header>
+
+<main>
+
+<!-- SECTION 1: HOME -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Welcome to my  personal website</p>
+    <h1 data-text="Kyle Culanculan">Kyle Culanculan</h1>
+    <p class="role"><span id="typed">Second-Year IT Student | Web Design &amp; Development Enthusiast</span><span class="cursor">|</span></p>
+    <blockquote class="motto">“Learn a little, build a lot, and never stop being curious.”</blockquote>
+    <p>
+      Hello! I’m Kyle, a second-year Information Technology student from Davao del Norte.
+      I love turning ideas into clean and functional web pages. Right now I’m learning HTML, CSS,
+      and JavaScript so I can build modern, responsive websites. I’m driven by curiosity and
+      I look forward to creating digital experiences that inspire and connect people.
+    </p>
+    <a class="btn" href="#projects">View Projects</a>
+    <a class="btn btn-outline" href="#contact">Get in Touch</a>
+    <div class="stats">
+      <div><b data-count="2">0</b><span>Year in BSIT</span></div>
+      <div><b data-count="4">0</b><span>Projects</span></div>
+      <div><b data-count="2">0</b><span>Certificates</span></div>
+    </div>
+  </div>
+  <figure class="hero-photo">
+    <div class="ring"><img src="img/me.jpg" alt="Portrait photo of Kyle Culanculan" width="320" height="320"></div>
+    <span class="chip c1">&lt;HTML/&gt;</span><span class="chip c2">CSS</span><span class="chip c3">JS</span>
+    <figcaption>Kyle Culanculan</figcaption>
+  </figure>
+<a class="scroll-down" href="#about" aria-label="Scroll to About">↓</a>
+</section>
+
+<!-- SECTION 2: ABOUT ME -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="grid two">
+    <article class="card">
+      <h3>Personal Information</h3>
+      <ul>
+        <li><strong>Hometown:</strong> Tuganay, Carmen, Davao del Norte, Philippines</li>
+        <li><strong>Age:</strong> <!-- optional: add your age --> 24</li>
+      </ul>
+
+      <h3>Educational Background</h3>
+      <ul class="timeline">
+        <li><strong>College:</strong> ACES Polytechnic College — BS Information Technology, 2nd Year (current)</li>
+        <li><strong>Senior High School:</strong> Carmen National High School</li>
+        <li><strong>Junior High School:</strong> Carmen National High School</li>
+        <li><strong>Elementary:</strong> Caroll A. Baltimore Christian Academy</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Hobbies &amp; Interests</h3>
+      <ul>
+        <li><strong>Web Design:</strong> Experimenting with layouts, colors, and fonts to make pages look good.</li>
+        <li><strong>Gaming:</strong> Playing FPS games, which sharpens my focus and teamwork.</li>
+        <li><strong>Exploring Technology:</strong> Watching tutorials and reading about the latest in front-end development.</li>
+      </ul>
+
+      <h3>Personal Goals</h3>
+      <ol>
+        <li><strong>Short-term:</strong> Master HTML, CSS, and JavaScript fundamentals this year.</li>
+        <li><strong>Short-term:</strong> Build and publish at least three complete websites on GitHub.</li>
+        <li><strong>Long-term:</strong> Graduate with an IT degree and work as a professional web developer.</li>
+      </ol>
+    </article>
+    <article class="card fun">
+      <img src="img/capri.gif" alt="Animated anime character used as my online avatar" width="140" height="120">
+      <div>
+        <h3>Fun Fact</h3>
+        <p>Outside of coding, I compete in esports. I placed <strong>first runner-up</strong> in the ACES Kahintek Dota 2 Tournament, and the same focus and teamwork help me when I work on class projects.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SECTION 3: SKILLS -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="grid three">
+    <article class="card">
+      <h3>💻 HTML &amp; Programming</h3>
+      <p>Beginner level. I can structure web pages with semantic HTML, style them with CSS, and I am learning Java and JavaScript basics.</p>
+      <div class="bar" role="img" aria-label="HTML 10 percent"><span data-w="10">HTML 10%</span></div>
+      <div class="bar" role="img" aria-label="CSS 10 percent"><span data-w="10">CSS 10%</span></div>
+      <div class="bar" role="img" aria-label="Java 20 percent"><span data-w="20">Java 20%</span></div>
+      <div class="bar" role="img" aria-label="JavaScript 10 percent"><span data-w="10">JS 10%</span></div>
+    </article>
+    <article class="card">
+      <h3>🛠️ Computer Troubleshooting</h3>
+      <p>I can handle common problems such as slow computers, software installation, driver updates, and basic network or peripheral issues for friends and family.</p>
+      <div class="bar" role="img" aria-label="Troubleshooting 60 percent"><span data-w="60">Troubleshooting 60%</span></div>
+    </article>
+    <article class="card">
+      <h3>🎨 Graphic Design</h3>
+      <p>I create simple posters, logos, and layouts using free design tools, with attention to color harmony, alignment, and readable typography.</p>
+      <div class="bar" role="img" aria-label="Design 50 percent"><span data-w="50">Design 50%</span></div>
+    </article>
+    <article class="card">
+      <h3>🗣️ Communication Skills</h3>
+      <p>I explain ideas clearly in English and Filipino, listen actively, and can present my class work confidently to classmates and teachers.</p>
+      <div class="bar" role="img" aria-label="Communication 70 percent"><span data-w="70">Communication 70%</span></div>
+    </article>
+    <article class="card">
+      <h3>🤝 Teamwork &amp; Leadership</h3>
+      <p>I contribute well in group activities, share tasks fairly, and step up as a leader when a team needs direction and encouragement.</p>
+      <div class="bar" role="img" aria-label="Teamwork 75 percent"><span data-w="75">Teamwork 75%</span></div>
+      <div class="bar" role="img" aria-label="Leadership 65 percent"><span data-w="65">Leadership 65%</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- SECTION 4: PROJECTS -->
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <h3>HTML Activities</h3>
+  <div class="grid two">
+    <article class="card">
+      <h4>Activity 1: My Second Web Page</h4>
+      <p>A basic page using headings, paragraphs, lists, and images. It shows my understanding of core HTML tags and page structure.</p>
+      <a href="#" class="link">View activity</a>
+    </article>
+    <article class="card">
+      <h4>Activity 2: Favorites List &amp; Links</h4>
+      <p>An exercise using ordered and unordered lists plus hyperlinks to link pages together. It demonstrates navigation and list formatting.</p>
+      <a href="#" class="link">View activity</a>
+    </article>
+  </div>
+
+  <h3>Class Schedule</h3>
+  <p>A weekly schedule built with an HTML table, showing rows, columns, and cell spanning.</p>
+  <div class="table-wrap">
+    <table id="sched">
+      <caption>ACES Polytechnic College - 2nd Year, BS Information Technology</caption>
+      <thead>
+        <tr><th scope="col">Time</th><th scope="col">Monday</th><th scope="col">Tuesday</th><th scope="col">Wednesday</th><th scope="col">Thursday</th><th scope="col">Friday</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">8:00 – 10:00</th><td>Data and Algorithms</td><td>Data and Algorithms</td><td></td><td></td><td></td></tr>
+        <tr><th scope="row">10:00 – 12:00</th><td>Data and Algorithms</td><td>Data and Algorithms</td><td></td><td></td><td></td></tr>
+        <tr class="break"><th scope="row">12:00 – 1:00</th><td colspan="5">Lunch Break</td></tr>
+        <tr><th scope="row">1:00 – 3:00</th><td>Web Systems and Technologies</td><td>Web Systems and Technologies</td><td>Physical Education</td><td></td><td></td></tr>
+        <tr><th scope="row">3:00 – 5:00</th><td>Discrete Mathematics</td><td>Discrete Mathematics</td><td>Physical Education</td><td></td><td></td></tr>
+        <tr><th scope="row">5:30 – 7:30</th><td>Human Computer Interaction</td><td>Human Computer Interaction</td><td></td><td></td><td></td></tr>
+        <tr><th scope="row">7:30 – 9:30</th><td>Contemporary World</td><td>Contemporary World</td><td></td><td></td><td></td></tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Coffee Shop Menu</h3>
+  <p>An improved version of my coffee shop menu project, using tables, lists, and headings to organize items and prices.</p>
+  <div class="grid three menu">
+    <article class="card">
+      <h4>☕ Hot Coffee</h4>
+      <table class="menu-table">
+        <tr><td>Espresso</td><td>₱70</td></tr>
+        <tr><td>Americano</td><td>₱80</td></tr>
+        <tr><td>Cappuccino</td><td>₱95</td></tr>
+        <tr><td>Caffè Latte</td><td>₱100</td></tr>
+      </table>
+    </article>
+    <article class="card">
+      <h4>🧊 Iced Drinks</h4>
+      <table class="menu-table">
+        <tr><td>Iced Americano</td><td>₱90</td></tr>
+        <tr><td>Iced Caramel Macchiato</td><td>₱125</td></tr>
+        <tr><td>Iced Mocha</td><td>₱120</td></tr>
+        <tr><td>Cold Brew</td><td>₱115</td></tr>
+      </table>
+    </article>
+    <article class="card">
+      <h4>🥐 Pastries</h4>
+      <table class="menu-table">
+        <tr><td>Butter Croissant</td><td>₱75</td></tr>
+        <tr><td>Blueberry Muffin</td><td>₱65</td></tr>
+        <tr><td>Chocolate Chip Cookie</td><td>₱45</td></tr>
+        <tr><td>Cheesecake Slice</td><td>₱130</td></tr>
+      </table>
+    </article>
+  </div>
+
+  <h3>Other Personal Creations</h3>
+  <article class="card" id="creation-card" tabindex="0">
+    <h4>SumiVerse Portfolio Website</h4>
+    <p>My personal portfolio hosted on GitHub Pages, featuring a responsive layout and a light/dark theme toggle. It shows my skills in HTML, CSS, and JavaScript.</p>
+    <a class="link" id="creation-link" href="https://sheroneko380.github.io/Personal-Web-1/" target="_blank" rel="noopener">Visit the live site</a>
+    <button class="preview-btn" id="preview-btn" type="button">▶ Preview</button>
+    <p class="hover-hint">Hover to preview</p>
+  </article>
+</section>
+
+<!-- SECTION 5: ACHIEVEMENTS -->
+<section id="achievements">
+  <h2>Achievements &amp; Awards</h2>
+  <div class="grid two">
+    <article class="card">
+      <h3>🏆 Academic Awards</h3>
+      <ul>
+        <li><strong>With Honors</strong> — Carmen National High School</li>
+        <li><strong>Best in ICT / Computer Subject</strong> — Carmen National High School, 2023</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>📜 Certificates</h3>
+      <ul>
+        <li><strong>Certificate of Completion</strong> — ACES Kahintek Esports Dota 2 Tournament First runner up</li>
+        <li><strong>Certificate of Participation</strong> — ACES Kahintek 2026</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-wrap">
+  <h2>Get in Touch</h2>
+  <address class="card">
+    <p><strong>Email:</strong> <a href="mailto:sheroneko380@gmail.com">sheroneko380@gmail.com</a></p>
+    <p><strong>Phone:</strong> (+63) 920 234 7070</p>
+    <p><strong>Location:</strong> <a href="https://www.google.com/maps?q=Tuganay%2C%20Carmen%2C%20Davao%20del%20Norte" target="_blank" rel="noopener">Tuganay, Carmen, Davao del Norte</a></p>
+    <p class="social">
+      <a href="https://www.facebook.com/kyle.culanculan" target="_blank" rel="noopener">Facebook</a> ·
+      <a href="https://www.instagram.com/sumi_fps/" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://x.com/0xFps_sumi2k" target="_blank" rel="noopener">Twitter / X</a>
+    </p>
+    <a class="btn" href="https://sheroneko380.github.io/Personal-Web-1/resume/Culanculan.resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+  </address>
+  <form class="card contact-form" action="mailto:sheroneko380@gmail.com" method="post" enctype="text/plain">
+    <h3>Send me a message</h3>
+    <label>Name <input type="text" name="name" required></label>
+    <label>Email <input type="email" name="email" required></label>
+    <label>Message <textarea name="message" rows="4" required></textarea></label>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+</main>
+
+<div id="site-preview" class="site-preview" aria-hidden="true">
+  <div class="sp-window" role="dialog" aria-label="Website preview">
+    <div class="sp-bar"><i></i><i></i><i></i><span class="sp-url">sheroneko380.github.io/Personal-Web-1</span><button id="sp-close" type="button" aria-label="Close preview">✕</button></div>
+    <div class="sp-screen" id="sp-screen">
+      <div class="sp-loading">LOADING PREVIEW...<br><small>If nothing appears, open the live site.</small></div>
+      <iframe id="sp-frame" title="Preview of my website" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe>
+      <a class="sp-go" id="sp-go" href="https://sheroneko380.github.io/Personal-Web-1/" target="_blank" rel="noopener" aria-label="Open the website in a new tab"><span>Click to open site ↗</span></a>
+    </div>
+  </div>
+</div>
+
+<div id="player" class="player">
+  <div class="player-panel" id="player-panel">
+    <p class="track" id="track-name">♪ music/song.mp3</p>
+    <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <label class="vol">VOL <input type="range" id="vol" min="0" max="1" step="0.05" value="0.5" aria-label="Volume"></label>
+    <label class="pick">Choose song <input type="file" id="file" accept="audio/*" hidden></label>
+  </div>
+  <div class="player-row">
+    <button id="disc" class="disc" type="button" aria-label="Play or pause music"><span></span></button>
+    <button id="panel-btn" class="panel-btn" type="button" aria-label="Show music controls" aria-expanded="false">♫</button>
+  </div>
+  <audio id="audio" src="music/song.mp3" loop preload="none"></audio>
+</div>
+<button id="to-top" type="button" aria-label="Back to top">↑</button>
+<footer>
+  <p><span class="status"></span> SYSTEM ONLINE &nbsp;|&nbsp; © 2026 Kyle Culanculan. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
